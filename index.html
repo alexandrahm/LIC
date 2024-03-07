@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Presupuesto</title>
+
+</head>
+<body>
+
+        <div class="p-5 bg-body-tertiary rounded-3 center-content">
+            <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg>
+            <h1 class="text-body-emphasis">Presupuesto de marzo 2024 <br> $ </h1>
+            <p class="col-lg-8 mx-auto fs-5 text-muted">
+                Presupuesto disponible
+            </p>
+            <label class="border border-dark">Ingresos: + </label>
+            <label class="border border-white">Egresos: - </label>
+            <div class="label-container">
+                <label class="label-small">Porcentaje de gastos: </label>
+                <label class="label-small back-dark">%</label>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+                        <svg class="bi mt-5 mb-3" width="45" height="45"></svg>
+                        <h1 class="text-body-emphasis"> Transacción </h1>
+                            <select name="ingreso-egreso" class="ingreso-egresodrop">
+                            <option value="Egreso">Egreso</option>
+                            <option value="Ingreso">Ingreso</option>
+                            </select>
+                    </div>
+                    <br><br> <!-- Salto de línea para separar los elementos -->
+                        <input type="text" name="monto" placeholder="Monto">
+                         <br><br> <!-- Salto de línea para separar los elementos -->
+                        <input type="text" name="descripcion" placeholder="Descripción">
+                </div>
+                
+            <hr>
+
+                <div class="col-md-6">
+                    <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+                        <svg class="bi mt-5 mb-3" width="45" height="45"></svg>
+                        <h1 class="text-body-emphasis"> Ingresos/Egresos </h1>
+                        <p class="col-lg-6 mx-auto mb-4">
+                            Selector
+                        </p>
+                        <input class="inputab" type="radio" name="tabs" id="ptab1" checked/>
+                        <label class="lbltab" for="ptab1">Ingresos</label>
+                        <input class="inputab" type="radio" name="tabs" id="ptab2"/>
+                        <label class="lbltab" for="ptab2">Egresos</label>
+                        <div class="tabcnt tabcontent1">Egresos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html> 
