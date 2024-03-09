@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LIC</title>
     <link rel="stylesheet" href="styles.css"> 
     <title>Presupuesto</title>
 
@@ -29,33 +29,37 @@
                 <div class="col-md-6">
                     <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
                         <svg class="bi mt-5 mb-3" width="45" height="45"></svg>
-                        <h1 class="text-body-emphasis"> Transacción </h1>
+                        <h1 class="text-body-emphasis"> Transacción
+                            <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+                                <button class="circular-btn" onclick="agregarTransaccion()">+</button>
+                        </h1>
                             <select name="ingreso-egreso" class="ingreso-egresodrop">
                             <option value="Egreso">Egreso</option>
                             <option value="Ingreso">Ingreso</option>
                             </select>
                     </div>
-                    <br><br> <!-- Salto de línea para separar los elementos -->
+                    <br><br> 
                         <input type="text" name="monto" placeholder="Monto">
-                         <br><br> <!-- Salto de línea para separar los elementos -->
+                         <br><br> 
                         <input type="text" name="descripcion" placeholder="Descripción">
                 </div>
                 
             <hr>
 
-                <div class="col-md-6">
-                    <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
-                        <svg class="bi mt-5 mb-3" width="45" height="45"></svg>
-                        <h1 class="text-body-emphasis"> Ingresos/Egresos </h1>
-                        <p class="col-lg-6 mx-auto mb-4">
-                            Selector
-                        </p>
-                        <input class="inputab" type="radio" name="tabs" id="ptab1" checked/>
-                        <label class="lbltab" for="ptab1">Ingresos</label>
-                        <input class="inputab" type="radio" name="tabs" id="ptab2"/>
-                        <label class="lbltab" for="ptab2">Egresos</label>
-                        <div class="tabcnt tabcontent1">Egresos</div>
-                    </div>
+            <div class="col-md-6">
+                <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+                    <svg class="bi mt-5 mb-3" width="45" height="45"></svg>
+                    <h1 class="text-body-emphasis"> Ingresos/Egresos </h1>
+                    <p class="col-lg-6 mx-auto mb-4">
+                        Selector
+                    </p>
+                    <input class="inputab" type="radio" name="tabs" id="ptab1" checked/>
+                    <label class="lbltab" for="ptab1">Ingresos</label>
+                    <input class="inputab" type="radio" name="tabs" id="ptab2"/>
+                    <label class="lbltab" for="ptab2">Egresos</label>
+                    <ul class="transaction-list">
+                        <!-- Lista de transacciones -->
+                    </ul>
                 </div>
             </div>
         </div>

@@ -119,3 +119,16 @@ label {
 #ptab1:checked + .lbltab, #ptab2:checked + .lbltab{
     background-color: #ccc;color: #333;
 }
+
+.circular-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(141, 141, 150);
+    color: rgb(1, 1, 16);
+    border: none;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
