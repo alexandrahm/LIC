@@ -132,3 +132,15 @@ label {
     text-align: center;
     cursor: pointer;
 }
+
+.tabcontent1, .tabcontent2 {
+    position: absolute;
+    top: 80px; /* ajusta según sea necesario */
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 1;
+    }
+    .tabcontent1 {
+        display: block;
+    }

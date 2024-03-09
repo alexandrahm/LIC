@@ -50,16 +50,20 @@
                 <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
                     <svg class="bi mt-5 mb-3" width="45" height="45"></svg>
                     <h1 class="text-body-emphasis"> Ingresos/Egresos </h1>
-                    <p class="col-lg-6 mx-auto mb-4">
-                        Selector
-                    </p>
-                    <input class="inputab" type="radio" name="tabs" id="ptab1" checked/>
+                    <input class="inputab" type="radio" name="tabs" id="ptab1" />
                     <label class="lbltab" for="ptab1">Ingresos</label>
-                    <input class="inputab" type="radio" name="tabs" id="ptab2"/>
+                    <div class="tabcnt tabcontent1">
+                        <ul class="transaction-list">
+                            <!-- Lista de transacciones de Ingresos -->
+                        </ul> 
+                    </div>
+                    <input class="inputab" type="radio" name="tabs" id="ptab2"checked/>
                     <label class="lbltab" for="ptab2">Egresos</label>
-                    <ul class="transaction-list">
-                        <!-- Lista de transacciones -->
-                    </ul>
+                    <div class="tabcnt tabcontent2">
+                        <ul class="transaction-list">
+                            <!-- Lista de transacciones de Egresos -->
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
