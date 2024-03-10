@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIC</title>
     <link rel="stylesheet" href="styles.css"> 
+    <script src="main.js"></script>
     <title>Presupuesto</title>
-
 </head>
 <body>
 
@@ -31,7 +31,7 @@
                         <svg class="bi mt-5 mb-3" width="45" height="45"></svg>
                         <h1 class="text-body-emphasis"> Transacción
                             <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
-                                <button class="circular-btn" onclick="agregarTransaccion()">+</button>
+                                <button id="circular-btn"  onclick="agregarTransaccion()" class="circular-btn">+</button>
                         </h1>
                             <select name="ingreso-egreso" class="ingreso-egresodrop">
                             <option value="Egreso">Egreso</option>
@@ -49,24 +49,23 @@
             <div class="col-md-6">
                 <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
                     <svg class="bi mt-5 mb-3" width="45" height="45"></svg>
-                    <h1 class="text-body-emphasis"> Ingresos/Egresos </h1>
+                    <h1 class="text-body-emphasis">Ingresos/Egresos</h1>
                     <input class="inputab" type="radio" name="tabs" id="ptab1" />
                     <label class="lbltab" for="ptab1">Ingresos</label>
                     <div class="tabcnt tabcontent1">
-                        <ul class="transaction-list">
-                            <!-- Lista de transacciones de Ingresos -->
+                        <ul class="transaction-list1">
+                            <!-- Lista de Ingresos -->
                         </ul> 
                     </div>
-                    <input class="inputab" type="radio" name="tabs" id="ptab2"checked/>
+                    <input class="inputab" type="radio" name="tabs" id="ptab2" checked />
                     <label class="lbltab" for="ptab2">Egresos</label>
                     <div class="tabcnt tabcontent2">
-                        <ul class="transaction-list">
-                            <!-- Lista de transacciones de Egresos -->
+                        <ul class="transaction-list2">
+                            <!-- Lista de Egresos -->
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
     </body>
 </html> 

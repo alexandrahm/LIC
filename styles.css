@@ -110,10 +110,13 @@ label {
 }
 .inputab ~ .tabcnt{
     display: none;
+    position: absolute;
+    align-items: center;
 }
 
 #ptab1:checked ~ .tabcnt.tabcontent1, #ptab2:checked ~ .tabcnt.tabcontent2{
     display: block;
+    align-items: center;
 }
 
 #ptab1:checked + .lbltab, #ptab2:checked + .lbltab{
@@ -133,14 +136,29 @@ label {
     cursor: pointer;
 }
 
-.tabcontent1, .tabcontent2 {
-    position: absolute;
-    top: 80px; /* ajusta según sea necesario */
-    left: 0;
-    width: 100%;
+.transaction-list1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items : center;
+}
+
+.transaction-list2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items : center;
+}
+
+.transaction-item {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #000000;
+    align-items: center;
+}
+.tabcnt {
+
     display: none;
-    z-index: 1;
-    }
-    .tabcontent1 {
-        display: block;
-    }
+    text-align: center; 
+    width: 40%; 
+}
